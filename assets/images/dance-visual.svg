@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="danceBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#09050d" />
+      <stop offset="50%" stop-color="#140715" />
+      <stop offset="100%" stop-color="#030305" />
+    </linearGradient>
+    <radialGradient id="redSpot" cx="45%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff1a40" stop-opacity="0.32" />
+      <stop offset="60%" stop-color="#820317" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#050508" stop-opacity="0" />
+    </radialGradient>
+    <filter id="ribbonGlow">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#danceBg)" />
+  <circle cx="400" cy="250" r="280" fill="url(#redSpot)" />
+
+  <!-- Kinetic Rhythm Ribbons & Vector Paths -->
+  <path d="M50,420 C200,430 250,220 380,180 C510,140 590,320 750,150" 
+        fill="none" stroke="#ff1a40" stroke-width="4" filter="url(#ribbonGlow)" />
+  
+  <path d="M80,450 C220,440 280,260 410,210 C540,160 620,360 770,190" 
+        fill="none" stroke="rgba(255, 255, 255, 0.45)" stroke-width="1.5" />
+
+  <path d="M120,480 C260,400 320,120 460,90 C600,60 680,280 790,220" 
+        fill="none" stroke="rgba(201, 8, 42, 0.35)" stroke-width="2" stroke-dasharray="4,6" />
+
+  <!-- Abstract Silhouette in Arabesque / Motion Leap -->
+  <g transform="translate(410, 240)">
+    <!-- Motion trails -->
+    <ellipse cx="-40" cy="10" rx="30" ry="80" transform="rotate(-25)" fill="rgba(255,26,64,0.06)" />
+    <ellipse cx="20" cy="-20" rx="20" ry="70" transform="rotate(20)" fill="rgba(255,26,64,0.1)" />
+
+    <!-- Torso and Limbs Form (Futuristic Minimalist Geometry) -->
+    <line x1="-30" y1="90" x2="10" y2="0" stroke="#ffffff" stroke-width="3" />
+    <line x1="10" y1="0" x2="-20" y2="-90" stroke="#ffffff" stroke-width="3" />
+    <!-- Extended Arm -->
+    <path d="M-15,-60 Q30,-90 90,-120" fill="none" stroke="#ff1a40" stroke-width="3" filter="url(#ribbonGlow)" />
+    <!-- Extended Leg Back -->
+    <path d="M-30,90 Q-90,130 -160,150" fill="none" stroke="#ffffff" stroke-width="2.5" />
+    <!-- Front Leg -->
+    <path d="M-30,90 Q10,140 50,210" fill="none" stroke="#ffffff" stroke-width="2.5" />
+    <!-- Head -->
+    <circle cx="-25" cy="-110" r="14" fill="#ffffff" filter="url(#ribbonGlow)" />
+    <circle cx="-25" cy="-110" r="5" fill="#ff1a40" />
+
+    <!-- Pulse Waves Around Core -->
+    <circle cx="0" cy="0" r="50" fill="none" stroke="rgba(255,26,64,0.3)" stroke-dasharray="2,6" />
+    <circle cx="0" cy="0" r="85" fill="none" stroke="rgba(255,255,255,0.08)" />
+  </g>
+
+  <!-- Technical Beats / BPM Caption -->
+  <text x="80" y="80" fill="#ff1a40" font-family="'Space Mono', monospace" font-size="11" letter-spacing="3">TEMPO // 128 BPM</text>
+  <text x="80" y="100" fill="rgba(255,255,255,0.4)" font-family="'Space Mono', monospace" font-size="10">KINETIC CHOREOGRAPHY &amp; GRAVITY DISSOLUTION</text>
+  
+  <text x="720" y="80" text-anchor="end" fill="rgba(255,255,255,0.5)" font-family="'Space Mono', monospace" font-size="11" letter-spacing="2">02 // MOVEMENT</text>
+  <line x1="620" y1="92" x2="720" y2="92" stroke="#ff1a40" stroke-width="1.5" />
+</svg>
+

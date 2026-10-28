@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bballBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c070c" />
+      <stop offset="60%" stop-color="#14060d" />
+      <stop offset="100%" stop-color="#030305" />
+    </linearGradient>
+    <radialGradient id="courtGlow" cx="65%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#ff1a40" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#820317" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#030305" stop-opacity="0" />
+    </radialGradient>
+    <filter id="neonCourtGlow">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bballBg)" />
+  <circle cx="520" cy="180" r="260" fill="url(#courtGlow)" />
+
+  <!-- Isometric Court Lines -->
+  <g stroke="rgba(255,255,255,0.08)" stroke-width="1.5" fill="none">
+    <!-- Outer Baseline & Sideline -->
+    <path d="M100,420 L580,420 L720,240 L340,240 Z" />
+    <!-- Three Point Arc -->
+    <path d="M260,420 C320,320 460,320 540,360" stroke="#ff1a40" stroke-opacity="0.4" stroke-width="2" />
+    <!-- Key / Paint Area -->
+    <path d="M340,420 L380,310 L480,310 L460,420 Z" />
+    <!-- Free Throw Circle -->
+    <ellipse cx="430" cy="310" rx="50" ry="20" stroke-dasharray="3,5" />
+  </g>
+
+  <!-- Glowing Neon Hoop / Rim & Backboard -->
+  <g transform="translate(480, 160)">
+    <!-- Backboard -->
+    <rect x="-40" y="-70" width="80" height="55" rx="2" fill="rgba(18, 16, 25, 0.7)" stroke="#ffffff" stroke-width="2" />
+    <rect x="-18" y="-45" width="36" height="25" fill="none" stroke="#ff1a40" stroke-width="2" filter="url(#neonCourtGlow)" />
+    <!-- Rim (Crimson Neon) -->
+    <ellipse cx="0" cy="5" rx="24" ry="9" fill="none" stroke="#ff1a40" stroke-width="3" filter="url(#neonCourtGlow)" />
+    <!-- Net Strands -->
+    <path d="M-22,7 L-10,38 L0,42 L10,38 L22,7" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-dasharray="2,3" />
+  </g>
+
+  <!-- Arc Trajectory of the Shot (Parabolic Motion) -->
+  <path d="M160,380 Q320,60 480,165" fill="none" stroke="#ff1a40" stroke-width="2.5" stroke-dasharray="6,8" filter="url(#neonCourtGlow)" />
+
+  <!-- Glowing Ball at Apex -->
+  <circle cx="320" cy="115" r="14" fill="#ff1a40" filter="url(#neonCourtGlow)" />
+  <circle cx="320" cy="115" r="7" fill="#ffffff" />
+  <!-- Ball Seams -->
+  <path d="M310,115 Q320,125 330,115" fill="none" stroke="#000000" stroke-width="1" />
+
+  <!-- Technical Overlay -->
+  <text x="80" y="80" fill="#ff1a40" font-family="'Space Mono', monospace" font-size="11" letter-spacing="3">COURT // 4TH QUARTER ENERGY</text>
+  <text x="80" y="100" fill="rgba(255,255,255,0.4)" font-family="'Space Mono', monospace" font-size="10">INSTINCT, PRESSURE &amp; PURE MOMENTUM</text>
+
+  <text x="720" y="80" text-anchor="end" fill="rgba(255,255,255,0.5)" font-family="'Space Mono', monospace" font-size="11" letter-spacing="2">05 // INTENSITY</text>
+</svg>

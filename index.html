@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STARGIRL — The Person Behind The Universe</title>
+  <meta name="description"
+    content="A dark luxury editorial portfolio inspired by celestial aesthetics and crimson neon. An immersive universe of coding, movement, arts, words, and design.">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-about">
+
+  <!-- Celestial Canvas & Atmospheric Layers -->
+  <canvas id="star-canvas"></canvas>
+  <div class="film-grain"></div>
+  <div class="nebula-orb orb-primary"></div>
+  <div class="nebula-orb orb-secondary"></div>
+  <div class="nebula-orb orb-tertiary"></div>
+  <div class="cursor-aura"></div>
+  <div class="page-transition-curtain"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-nav">
+    <div class="nav-brand">
+      <a href="index.html" class="brand-logo" aria-label="Stargirl Home">
+        <span class="brand-star">✦</span>
+        <span>STARGIRL</span>
+      </a>
+      <span class="brand-badge">EST. 2026 // UNIVERSE</span>
+    </div>
+
+    <nav aria-label="Primary Navigation">
+      <ul class="nav-links">
+        <li class="nav-item active"><a href="index.html">ABOUT</a></li>
+        <li class="nav-item"><a href="things.html">MY UNIVERSE</a></li>
+        <li class="nav-item"><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="nav-audio-btn" type="button" aria-label="Toggle celestial audio ambiance">
+        <div class="audio-bars">
+          <span class="audio-bar"></span>
+          <span class="audio-bar"></span>
+          <span class="audio-bar"></span>
+        </div>
+        <span class="audio-label">AMBIENCE: OFF</span>
+      </button>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" aria-hidden="true">
+    <ul class="mobile-drawer-links">
+      <li><a href="index.html"><span class="num">01 //</span> ABOUT ME</a></li>
+      <li><a href="things.html"><span class="num">02 //</span> MY UNIVERSE</a></li>
+      <li><a href="contact.html"><span class="num">03 //</span> CONTACT</a></li>
+    </ul>
+    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--steel-border);">
+      <p class="technical-label">STARGIRL CONSTELLATION LOCKED</p>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- =======================================================================
+         HERO SECTION: THE PERSON BEHIND THE UNIVERSE
+         ======================================================================= -->
+    <section class="hero-editorial">
+      <div class="container">
+
+        <div class="hero-meta-grid">
+          <span class="hero-coords">LAT 43.6532° N // LONG 79.3832° W</span>
+          <span class="hero-overline">THE PERSON BEHIND THE UNIVERSE</span>
+          <span class="technical-label">FREQUENCY: 104.7 MHZ</span>
+        </div>
+
+        <div class="hero-title-container">
+          <h1 class="editorial-title hero-title-main">
+            ABOUT <br>
+            <span class="serif-italic crimson-glow-text hero-title-sub">ME</span>
+          </h1>
+        </div>
+
+        <p class="hero-intro-text">
+          More than one passion. More than one story. Just me, in every form I choose to be.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#about-content" class="btn-primary">
+            <span>EXPLORE PROFILE</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </a>
+          <a href="things.html" class="btn-secondary">
+            <span>ENTER THE UNIVERSE</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Animated Scroll Down Indicator -->
+      <a href="#about-content" class="hero-scroll-indicator" aria-label="Scroll to about content">
+        <span class="scroll-text">SCROLL DOWN</span>
+        <div class="scroll-line-container">
+          <div class="scroll-line-beam"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- =======================================================================
+         ABOUT ME CONTENT SECTION: "SO, WHO AM I?"
+         ======================================================================= -->
+    <section class="section-wrapper about-section" id="about-content">
+      <div class="container">
+
+        <div class="section-header-editorial">
+          <span class="section-num">01 // IDENTITY</span>
+          <h2 class="editorial-title section-title-large">
+            SO, WHO <span class="serif-italic crimson-glow-text">AM I?</span>
+          </h2>
+        </div>
+
+        <!-- Asymmetrical Editorial Two-Column Layout -->
+        <div class="editorial-grid">
+
+          <!-- Column 1: Luxury Specimen Portrait Frame -->
+          <div class="portrait-container">
+            <div class="portrait-accent-pill">SPECIMEN // EDITION 01</div>
+
+            <div class="portrait-frame">
+              <span class="portrait-hud-corner corner-tl"></span>
+              <span class="portrait-hud-corner corner-tr"></span>
+              <span class="portrait-hud-corner corner-bl"></span>
+              <span class="portrait-hud-corner corner-br"></span>
+
+              <!-- 
+                =======================================================================
+                TO USE YOUR OWN PHOTOGRAPH:
+                Replace the <img> below with your photo:
+                <img src="assets/images/your-photo.jpg" alt="Portrait of Stargirl" class="portrait-svg-art">
+                =======================================================================
+              -->
+              <img src="assets/images/portrait-placeholder.svg" alt="Stargirl Editorial Specimen Portrait"
+                class="portrait-svg-art">
+
+              <div class="portrait-caption-bar">
+                <div>
+                  <span class="specimen-tag">STARGIRL UNIVERSE</span>
+                  <span class="specimen-sub">MULTIFACETED ARCHETYPE</span>
+                </div>
+                <span class="technical-label">SYS.ACTIVE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Editorial Biography Narrative -->
+          <div class="editorial-narrative">
+
+            <!-- Editorial Annotations Badges -->
+            <div class="editorial-labels-row">
+              <span class="editorial-tag">CURIOUS MIND</span>
+              <span class="editorial-tag">CREATIVE SOUL</span>
+              <span class="editorial-tag">ALWAYS EXPLORING</span>
+            </div>
+
+            <div class="bio-lead">
+              Hey, I'm <span class="highlight">[YOUR NAME]</span>.
+            </div>
+
+            <div class="bio-paragraphs">
+              <p>
+                I'm someone who has never wanted to be defined by just one thing. I love exploring, creating, learning,
+                and discovering new sides of myself.
+              </p>
+              <p>
+                From <strong>coding something from scratch</strong> to <strong>expressing myself through dance</strong>,
+                from stepping onto a basketball court to finding quiet moments through journaling, I find different ways
+                to make sense of the world around me.
+              </p>
+              <p>
+                I'm curious by nature, creative at heart, and always becoming a little more of the person I want to be.
+              </p>
+              <p>
+                This is a little corner of the internet where all those different versions of me come together.
+              </p>
+            </div>
+
+            <div class="bio-signature-block">
+              <div>
+                <span class="signature-name">Stargirl.</span>
+                <span class="specimen-sub" style="display:block; margin-top: 4px;">ARCHITECT OF THE UNIVERSE</span>
+              </div>
+              <div class="signature-meta">
+                <span>COORD: 43.65 // -79.38</span><br>
+                <span>VER: 2026.01</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         PILLARS SECTION: THE 4 CORE MODES
+         ======================================================================= -->
+    <section class="pillars-section">
+      <div class="container">
+
+        <div class="section-header-editorial">
+          <span class="section-num">02 // PILLARS OF EXPRESSION</span>
+          <h2 class="editorial-title" style="font-size: clamp(2rem, 4vw, 3.8rem);">
+            THE ARCHITECTURE OF <span class="serif-italic crimson-glow-text">BECOMING</span>
+          </h2>
+        </div>
+
+        <div class="pillars-grid">
+
+          <div class="pillar-card">
+            <span class="pillar-index">01 // SYNTHESIS</span>
+            <h3 class="pillar-title">LOGIC &amp; CODE</h3>
+            <p class="pillar-desc">
+              Building interactive worlds from nothing but syntax and intent. Where mathematical precision meets dark
+              atmospheric aesthetics.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pillar-index">02 // KINETICS</span>
+            <h3 class="pillar-title">MOVEMENT &amp; PULSE</h3>
+            <p class="pillar-desc">
+              From the rhythmic intensity of dance to the relentless endurance of swimming and the electric pressure of
+              the basketball court.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pillar-index">03 // VISION</span>
+            <h3 class="pillar-title">ART &amp; PROSE</h3>
+            <p class="pillar-desc">
+              Charcoal strokes on paper, late-night handwritten journal reflections, and speeches delivered with
+              unwavering voice and clarity.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pillar-index">04 // EVOLUTION</span>
+            <h3 class="pillar-title">THE CONSTANT SEARCH</h3>
+            <p class="pillar-desc">
+              Refusing to fit neatly inside a single box. Finding courage in curiosity and turning every obsession into
+              personal craftsmanship.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CLOSING TRANSITION SECTION: ENTER THE UNIVERSE
+         ======================================================================= -->
+    <section class="transition-portal-section">
+      <div class="portal-backdrop-glow"></div>
+
+      <div class="container portal-content">
+        <span class="portal-overline">THE NEXT HORIZON // MY UNIVERSE</span>
+
+        <h2 class="editorial-title portal-headline">
+          BUT THAT'S ONLY <br>
+          <span class="serif-italic crimson-glow-text">THE SURFACE.</span>
+        </h2>
+
+        <p class="portal-quote">
+          "Step into the galaxy where passion meets obsession, and every version of me has a home."
+        </p>
+
+        <div class="portal-action-box">
+          <a href="things.html" class="btn-portal-enter">
+            <span>ENTER MY UNIVERSE</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <span class="portal-footnote">08 OBSESSIONS &amp; DISCIPLINES TO DISCOVER</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="nav-brand">
+            <a href="index.html" class="brand-logo">
+              <span class="brand-star">✦</span>
+              <span>STARGIRL</span>
+            </a>
+          </div>
+          <p class="footer-tagline">
+            "A universe of everything I am. Unbound by category, driven by curiosity."
+          </p>
+          <div class="system-time-wrapper">
+            <span class="technical-label">SYS TIME: <span class="system-clock-time">00:00:00 UTC</span></span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">NAVIGATION</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="things.html">My Universe (Things I Do)</a></li>
+            <li><a href="contact.html">Transmission / Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">DISCIPLINES</h4>
+          <ul class="footer-nav-list">
+            <li><a href="coding.html">01 // Coding</a></li>
+            <li><a href="dance.html">02 // Dance</a></li>
+            <li><a href="drawing.html">03 // Drawing</a></li>
+            <li><a href="swimming.html">04 // Swimming</a></li>
+            <li><a href="basketball.html">05 // Basketball</a></li>
+            <li><a href="speeches.html">06 // Speeches</a></li>
+            <li><a href="journaling.html">07 // Journaling</a></li>
+            <li><a href="websites.html">08 // Websites</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 STARGIRL UNIVERSE. ALL RIGHTS RESERVED.</span>
+        <button type="button" class="back-to-top-btn" aria-label="Back to top of page">
+          <span>RETURN TO APEX</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Core Scripts -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

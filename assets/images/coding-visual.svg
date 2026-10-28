@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="codeBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08070e" />
+      <stop offset="100%" stop-color="#030305" />
+    </linearGradient>
+    <linearGradient id="neonRedLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff1a40" />
+      <stop offset="100%" stop-color="#820317" />
+    </linearGradient>
+    <filter id="codeGlow">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#codeBg)" />
+  <circle cx="680" cy="120" r="220" fill="#ff1a40" opacity="0.08" filter="url(#codeGlow)" />
+
+  <!-- Grid wireframe -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+  </g>
+
+  <!-- Cyber Terminal Window -->
+  <rect x="70" y="60" width="660" height="380" rx="4" fill="rgba(14, 12, 22, 0.75)" stroke="rgba(255, 26, 64, 0.3)" stroke-width="1.5" />
+  
+  <!-- Terminal Top Bar -->
+  <rect x="70" y="60" width="660" height="42" fill="rgba(20, 16, 30, 0.95)" />
+  <circle cx="95" cy="81" r="5" fill="#ff1a40" />
+  <circle cx="115" cy="81" r="5" fill="#ff9900" opacity="0.6" />
+  <circle cx="135" cy="81" r="5" fill="#00ff66" opacity="0.4" />
+  <text x="160" y="86" fill="rgba(255,255,255,0.4)" font-family="'Space Mono', monospace" font-size="11" letter-spacing="2">ROOT // STARGIRL_KERNEL.SYS</text>
+  <text x="700" y="86" text-anchor="end" fill="#ff1a40" font-family="'Space Mono', monospace" font-size="11">● 60 FPS</text>
+
+  <!-- Glowing Syntax Architecture -->
+  <g font-family="'Space Mono', monospace" font-size="13" letter-spacing="1">
+    <text x="110" y="145" fill="rgba(255,255,255,0.4)">01</text>
+    <text x="150" y="145" fill="#ff1a40" font-weight="700">class</text>
+    <text x="205" y="145" fill="#ffffff">CelestialEntity</text>
+    <text x="350" y="145" fill="#8c93a0">extends</text>
+    <text x="425" y="145" fill="#ff1a40">Universe</text>
+    <text x="500" y="145" fill="#ffffff">{</text>
+
+    <text x="110" y="180" fill="rgba(255,255,255,0.4)">02</text>
+    <text x="180" y="180" fill="#8c93a0">constructor() {</text>
+
+    <text x="110" y="215" fill="rgba(255,255,255,0.4)">03</text>
+    <text x="210" y="215" fill="#ffffff">this.dimension = <tspan fill="#ff1a40">"STARBOY_FREQUENCY"</tspan>;</text>
+
+    <text x="110" y="250" fill="rgba(255,255,255,0.4)">04</text>
+    <text x="210" y="250" fill="#ffffff">this.energy = <tspan fill="#ff1a40">Infinity</tspan>;</text>
+
+    <text x="110" y="285" fill="rgba(255,255,255,0.4)">05</text>
+    <text x="180" y="285" fill="#8c93a0">}</text>
+
+    <text x="110" y="320" fill="rgba(255,255,255,0.4)">06</text>
+    <text x="180" y="320" fill="#ff1a40">async</text>
+    <text x="240" y="320" fill="#ffffff">synthesizeFuture() {</text>
+
+    <text x="110" y="355" fill="rgba(255,255,255,0.4)">07</text>
+    <text x="210" y="355" fill="#8c93a0">await this.compile(<tspan fill="#ff1a40">"CREATIVITY_AND_LOGIC"</tspan>);</text>
+
+    <text x="110" y="390" fill="rgba(255,255,255,0.4)">08</text>
+    <text x="150" y="390" fill="#ffffff">}</text>
+  </g>
+
+  <!-- Geometric Circuit Accent -->
+  <path d="M520,230 L580,230 L630,290 L670,290" fill="none" stroke="url(#neonRedLine)" stroke-width="2" filter="url(#codeGlow)" />
+  <circle cx="670" cy="290" r="4" fill="#ffffff" filter="url(#codeGlow)" />
+  <circle cx="520" cy="230" r="3" fill="#ff1a40" />
+</svg>
+

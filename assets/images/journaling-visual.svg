@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="journBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#09060b" />
+      <stop offset="60%" stop-color="#130811" />
+      <stop offset="100%" stop-color="#030305" />
+    </linearGradient>
+    <radialGradient id="inkGlow" cx="45%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#ff1a40" stop-opacity="0.28" />
+      <stop offset="60%" stop-color="#820317" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#030305" stop-opacity="0" />
+    </radialGradient>
+    <filter id="crimsonInkFilter">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#journBg)" />
+  <circle cx="400" cy="250" r="280" fill="url(#inkGlow)" />
+
+  <!-- Open Luxury Journal Book Spread -->
+  <g transform="translate(400, 250)">
+    <!-- Book Shadow -->
+    <rect x="-260" y="-150" width="520" height="300" rx="6" fill="#050408" opacity="0.8" />
+
+    <!-- Left Page -->
+    <path d="M-250,-140 Q-130,-146 -10,-138 L-10,140 Q-130,132 -250,138 Z" 
+          fill="#110e19" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+    
+    <!-- Right Page -->
+    <path d="M10,-138 Q130,-146 250,-140 L250,138 Q130,132 10,140 Z" 
+          fill="#13101c" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+
+    <!-- Spine Center Shadow -->
+    <rect x="-10" y="-140" width="20" height="280" fill="#08060d" />
+
+    <!-- Page Grid / Ruled Lines (Left Page) -->
+    <g stroke="rgba(255,255,255,0.06)" stroke-width="1">
+      <line x1="-220" y1="-95" x2="-40" y2="-95" />
+      <line x1="-220" y1="-65" x2="-40" y2="-65" />
+      <line x1="-220" y1="-35" x2="-40" y2="-35" />
+      <line x1="-220" y1="-5" x2="-40" y2="-5" />
+      <line x1="-220" y1="25" x2="-40" y2="25" />
+      <line x1="-220" y1="55" x2="-40" y2="55" />
+      <line x1="-220" y1="85" x2="-40" y2="85" />
+    </g>
+
+    <!-- Poetic Handwriting / Manuscript Curve (Left Page) -->
+    <path d="M-210,-95 Q-150,-115 -100,-95 T-50,-95" fill="none" stroke="#ff1a40" stroke-width="2" filter="url(#crimsonInkFilter)" />
+    <path d="M-210,-65 Q-160,-80 -120,-65 T-60,-65" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" />
+    <path d="M-210,-35 Q-140,-50 -80,-35" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" />
+
+    <!-- Constellation Chart / Stargirl Map (Right Page) -->
+    <g transform="translate(130, 0)">
+      <circle cx="0" cy="0" r="70" fill="none" stroke="rgba(255,26,64,0.25)" stroke-dasharray="2,5" />
+      <!-- Constellation Nodes & Links -->
+      <line x1="-40" y1="-35" x2="10" y2="-50" stroke="#ffffff" stroke-width="1.2" />
+      <line x1="10" y1="-50" x2="45" y2="-10" stroke="#ff1a40" stroke-width="1.5" />
+      <line x1="45" y1="-10" x2="20" y2="40" stroke="#ffffff" stroke-width="1.2" />
+      <line x1="20" y1="40" x2="-35" y2="30" stroke="#ff1a40" stroke-width="1.5" />
+      <line x1="-35" y1="30" x2="-40" y2="-35" stroke="rgba(255,255,255,0.5)" stroke-width="1.2" />
+
+      <circle cx="-40" cy="-35" r="3" fill="#ffffff" />
+      <circle cx="10" cy="-50" r="4" fill="#ff1a40" filter="url(#crimsonInkFilter)" />
+      <circle cx="45" cy="-10" r="3" fill="#ffffff" />
+      <circle cx="20" cy="40" r="4" fill="#ff1a40" filter="url(#crimsonInkFilter)" />
+      <circle cx="-35" cy="30" r="3" fill="#ffffff" />
+    </g>
+
+    <!-- Crimson Silk Ribbon Bookmark Flowing Down -->
+    <path d="M0,-140 Q-20,0 35,90 T20,185" fill="none" stroke="#ff1a40" stroke-width="4.5" filter="url(#crimsonInkFilter)" />
+    <path d="M0,-140 Q-20,0 35,90 T20,185" fill="none" stroke="#ffffff" stroke-width="1" />
+  </g>
+
+  <!-- Editorial Metadata -->
+  <text x="80" y="80" fill="#ff1a40" font-family="'Space Mono', monospace" font-size="11" letter-spacing="3">ENTRY // 03:42 AM REFLECTIONS</text>
+  <text x="80" y="100" fill="rgba(255,255,255,0.4)" font-family="'Space Mono', monospace" font-size="10">RAW VULNERABILITY, MIDNIGHT PROSE &amp; MEMORY PRESERVATION</text>
+
+  <text x="720" y="80" text-anchor="end" fill="rgba(255,255,255,0.5)" font-family="'Space Mono', monospace" font-size="11" letter-spacing="2">07 // DIALOGUE</text>
+</svg>

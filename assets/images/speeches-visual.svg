@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="speechBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#09070f" />
+      <stop offset="50%" stop-color="#150612" />
+      <stop offset="100%" stop-color="#030305" />
+    </linearGradient>
+    <radialGradient id="micGlow" cx="40%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff1a40" stop-opacity="0.32" />
+      <stop offset="60%" stop-color="#820317" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#030305" stop-opacity="0" />
+    </radialGradient>
+    <filter id="voiceGlow">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#speechBg)" />
+  <circle cx="340" cy="250" r="280" fill="url(#micGlow)" />
+
+  <!-- Acoustic Shockwaves / Concentric Radiating Rings -->
+  <g fill="none" stroke="#ff1a40" filter="url(#voiceGlow)">
+    <circle cx="340" cy="230" r="70" stroke-width="1.5" stroke-opacity="0.7" />
+    <circle cx="340" cy="230" r="130" stroke-width="2" stroke-opacity="0.5" stroke-dasharray="8,6" />
+    <circle cx="340" cy="230" r="200" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4,8" />
+    <circle cx="340" cy="230" r="280" stroke-width="0.8" stroke-opacity="0.15" />
+  </g>
+
+  <!-- Spectrogram Frequency Bars -->
+  <g transform="translate(140, 390)">
+    <line x1="0" y1="0" x2="0" y2="-30" stroke="rgba(255,255,255,0.3)" stroke-width="3" />
+    <line x1="20" y1="0" x2="20" y2="-55" stroke="rgba(255,255,255,0.5)" stroke-width="3" />
+    <line x1="40" y1="0" x2="40" y2="-90" stroke="#ff1a40" stroke-width="3" />
+    <line x1="60" y1="0" x2="60" y2="-120" stroke="#ff1a40" stroke-width="3" filter="url(#voiceGlow)" />
+    <line x1="80" y1="0" x2="80" y2="-75" stroke="#ffffff" stroke-width="3" />
+    <line x1="100" y1="0" x2="100" y2="-40" stroke="rgba(255,255,255,0.4)" stroke-width="3" />
+    <line x1="120" y1="0" x2="120" y2="-95" stroke="#ff1a40" stroke-width="3" />
+    <line x1="140" y1="0" x2="140" y2="-140" stroke="#ff1a40" stroke-width="3" filter="url(#voiceGlow)" />
+    <line x1="160" y1="0" x2="160" y2="-110" stroke="#ffffff" stroke-width="3" />
+    <line x1="180" y1="0" x2="180" y2="-65" stroke="rgba(255,255,255,0.5)" stroke-width="3" />
+    <line x1="200" y1="0" x2="200" y2="-85" stroke="#ff1a40" stroke-width="3" />
+    <line x1="220" y1="0" x2="220" y2="-130" stroke="#ff1a40" stroke-width="3" filter="url(#voiceGlow)" />
+    <line x1="240" y1="0" x2="240" y2="-70" stroke="rgba(255,255,255,0.4)" stroke-width="3" />
+    <line x1="260" y1="0" x2="260" y2="-45" stroke="rgba(255,255,255,0.3)" stroke-width="3" />
+  </g>
+
+  <!-- Editorial Microphone Silhouette (Vintage Shure 55SH Style) -->
+  <g transform="translate(340, 230)">
+    <!-- Stand -->
+    <line x1="0" y1="65" x2="0" y2="180" stroke="#ffffff" stroke-width="4" />
+    <rect x="-35" y="175" width="70" height="8" rx="2" fill="#ffffff" />
+    <!-- Mount -->
+    <path d="M-15,65 L15,65 L8,80 L-8,80 Z" fill="#8c93a0" />
+    <!-- Mic Capsule Body -->
+    <rect x="-28" y="-60" width="56" height="110" rx="16" fill="#14111d" stroke="#ffffff" stroke-width="2.5" />
+    <!-- Center Crimson Core Glow -->
+    <rect x="-18" y="-45" width="36" height="80" rx="10" fill="#ff1a40" opacity="0.35" filter="url(#voiceGlow)" />
+    <!-- Horizontal Grille Ribs -->
+    <line x1="-24" y1="-40" x2="24" y2="-40" stroke="#ffffff" stroke-width="2" />
+    <line x1="-26" y1="-25" x2="26" y2="-25" stroke="#ffffff" stroke-width="2" />
+    <line x1="-27" y1="-10" x2="27" y2="-10" stroke="#ffffff" stroke-width="2" />
+    <line x1="-27" y1="5" x2="27" y2="5" stroke="#ffffff" stroke-width="2" />
+    <line x1="-26" y1="20" x2="26" y2="20" stroke="#ffffff" stroke-width="2" />
+    <line x1="-24" y1="35" x2="24" y2="35" stroke="#ffffff" stroke-width="2" />
+  </g>
+
+  <!-- Technical Audio Overlay -->
+  <text x="80" y="80" fill="#ff1a40" font-family="'Space Mono', monospace" font-size="11" letter-spacing="3">SIGNAL // 432 HZ RESONANCE</text>
+  <text x="80" y="100" fill="rgba(255,255,255,0.4)" font-family="'Space Mono', monospace" font-size="10">ORATORY, PERSUASION &amp; COMMANDING THE STAGE</text>
+
+  <text x="720" y="80" text-anchor="end" fill="rgba(255,255,255,0.5)" font-family="'Space Mono', monospace" font-size="11" letter-spacing="2">06 // RHETORIC</text>
+</svg>

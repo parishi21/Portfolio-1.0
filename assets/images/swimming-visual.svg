@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="swimBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#05080e" />
+      <stop offset="60%" stop-color="#0a0514" />
+      <stop offset="100%" stop-color="#030305" />
+    </linearGradient>
+    <radialGradient id="swimGlow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ff1a40" stop-opacity="0.28" />
+      <stop offset="60%" stop-color="#3d0510" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#030305" stop-opacity="0" />
+    </radialGradient>
+    <filter id="waterGlow">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#swimBg)" />
+  <circle cx="400" cy="200" r="300" fill="url(#swimGlow)" />
+
+  <!-- Isometric Swimming Lane Perspective Lines -->
+  <g stroke="rgba(255,255,255,0.06)" stroke-width="1.2">
+    <line x1="400" y1="120" x2="100" y2="480" />
+    <line x1="400" y1="120" x2="250" y2="480" />
+    <line x1="400" y1="120" x2="400" y2="480" stroke="#ff1a40" stroke-width="2" stroke-dasharray="6,8" filter="url(#waterGlow)" />
+    <line x1="400" y1="120" x2="550" y2="480" />
+    <line x1="400" y1="120" x2="700" y2="480" />
+  </g>
+
+  <!-- Fluid Caustic Wave Rhythms -->
+  <path d="M60,280 Q200,240 380,270 T740,260" fill="none" stroke="rgba(255,26,64,0.3)" stroke-width="2" />
+  <path d="M40,320 Q220,290 410,330 T760,310" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
+  <path d="M80,360 Q260,340 440,370 T720,350" fill="none" stroke="rgba(255,26,64,0.4)" stroke-width="2.5" filter="url(#waterGlow)" />
+  <path d="M30,410 Q210,380 400,420 T770,400" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+
+  <!-- Minimalist Swimmer Silhouette Streamline -->
+  <g transform="translate(400, 200)">
+    <!-- Motion displacement wakes -->
+    <path d="M-60,-20 L0,-60 L60,-20" fill="none" stroke="#ff1a40" stroke-width="2" stroke-dasharray="2,4" />
+    <!-- Arms Extended Streamline -->
+    <line x1="0" y1="-70" x2="0" y2="50" stroke="#ffffff" stroke-width="3" filter="url(#waterGlow)" />
+    <!-- Head -->
+    <circle cx="0" cy="-35" r="9" fill="#ffffff" />
+    <!-- Torso -->
+    <ellipse cx="0" cy="10" rx="14" ry="30" fill="rgba(255,26,64,0.18)" stroke="#ff1a40" stroke-width="1.5" />
+    <!-- Kick trail -->
+    <line x1="0" y1="40" x2="-10" y2="85" stroke="#ffffff" stroke-width="2.5" />
+    <line x1="0" y1="40" x2="10" y2="90" stroke="#ffffff" stroke-width="2.5" />
+  </g>
+
+  <!-- Metric Labels -->
+  <text x="80" y="80" fill="#ff1a40" font-family="'Space Mono', monospace" font-size="11" letter-spacing="3">DEPTH // 2.5 METERS</text>
+  <text x="80" y="100" fill="rgba(255,255,255,0.4)" font-family="'Space Mono', monospace" font-size="10">MEDITATIVE HYDROLOCK &amp; ZERO RESISTANCE</text>
+
+  <text x="720" y="80" text-anchor="end" fill="rgba(255,255,255,0.5)" font-family="'Space Mono', monospace" font-size="11" letter-spacing="2">04 // ENDURANCE</text>
+</svg>
+
